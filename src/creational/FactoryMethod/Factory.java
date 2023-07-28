@@ -5,7 +5,7 @@ public abstract class Factory {
 		boolean creatable = this.isCreatable(name);
 		if(creatable) {
 			Item item = this.createItem(name);
-			postprocessItem(name);
+			this.postprocessItem(name);
 			return item;
 		}
 		
